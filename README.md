@@ -22,6 +22,12 @@ Configuration to WAR file in Apache Tomcat
 
 - Copy war and put in `webapps` folder.
 
+## Set VM options and Catalina options
+
+- Put VM options into `.vmoptions` file
+
+- Put Catalina options into `.catalinaoptions` file
+
 ## Run application
 
 - Run `startup.bat`
