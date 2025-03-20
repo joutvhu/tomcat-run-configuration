@@ -4,9 +4,8 @@ rem Author: Giao Ho
 
 setlocal
 
-set "CURRENT_DIR=%cd%"
 set "CATALINA_HOME=F:\Kit\Server\Tomcat\apache-tomcat-10.1.19"
-set "CATALINA_BASE=%CURRENT_DIR%"
+set "CATALINA_BASE=%cd%"
 set "EXECUTABLE=%CATALINA_HOME%\bin\catalina.bat"
 
 if exist "%EXECUTABLE%" goto okHome
@@ -31,7 +30,7 @@ shift
 goto setArgs
 :doneSetArgs
 
-if exist "%CURRENT_DIR%\setenv.bat" call "%CURRENT_DIR%\setenv.bat"
+if exist "%cd%\setenv.bat" call "%cd%\setenv.bat"
 
 call "%EXECUTABLE%" start %CMD_LINE_ARGS%
 
