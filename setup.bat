@@ -11,7 +11,12 @@ if not exist "%tomcatPath%" (
     exit /b 1
 )
 if not exist "%tomcatPath%\conf" (
-    echo The tomcat conf path does not exist.
+    echo The conf folder does not exist in tomcat folder.
+    pause
+    exit /b 1
+)
+if not exist "%tomcatPath%\bin\catalina.bat" (
+    echo The bin\catalina.bat does not exist in tomcat folder.
     pause
     exit /b 1
 )

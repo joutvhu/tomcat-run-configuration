@@ -4,7 +4,7 @@ rem Author: Giao Ho
 
 setlocal
 
-set "CATALINA_HOME=F:\Kit\Server\Tomcat\apache-tomcat-10.1.19"
+set "CATALINA_HOME=%CATALINA_HOME%"
 set "CATALINA_BASE=%cd%"
 set "EXECUTABLE=%CATALINA_HOME%\bin\catalina.bat"
 
