@@ -2,9 +2,13 @@
 
 Configuration to WAR file in Apache Tomcat
 
+## Setup environment
+
+- Run `setup.bat` and enter tomcat path.
+
 ## Change ports
 
-- Open `conf/server.xml` and change the following snippet
+- Open `conf/server.xml` and change the following snippet.
 
 ```xml
 <Connector port="8080" protocol="HTTP/1.1"
@@ -16,4 +20,4 @@ Configuration to WAR file in Apache Tomcat
 
 ## Add WAR file
 
-- Copy war and put in `webapps` folder
+- Copy war and put in `webapps` folder.
