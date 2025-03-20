@@ -9,7 +9,7 @@ if exist "%vmoptsFile%" (
     )
     set "vmoptions=!vmoptions:~1!"
 
-    set "JAVA_OPTS=%JAVA_OPTS% !vmoptions!"
+    set "JAVA_OPTS=%JAVA_OPTS% %vmoptions%"
 )
 
 set catoptsFile=%cd%\.catalinaoptions
@@ -21,5 +21,5 @@ if exist "%catoptsFile%" (
     )
     set "catoptions=!catoptions:~1!"
 
-    set "CATALINA_OPTS=%CATALINA_OPTS% !catoptions!"
+    set "CATALINA_OPTS=%CATALINA_OPTS% %catoptions%"
 )

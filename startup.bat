@@ -35,3 +35,5 @@ if exist "%cd%\setenv.bat" call "%cd%\setenv.bat"
 call "%EXECUTABLE%" start %CMD_LINE_ARGS%
 
 :end
+
+pause
