@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set currentDir=%CD%
+set currentDir=%cd%
 
 :: Prompt the user for the tomcat path
 set /p tomcatPath="Enter the tomcat path: "
