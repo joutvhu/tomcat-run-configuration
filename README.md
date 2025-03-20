@@ -21,3 +21,7 @@ Configuration to WAR file in Apache Tomcat
 ## Add WAR file
 
 - Copy war and put in `webapps` folder.
+
+## Run application
+
+- Run `startup.bat`
