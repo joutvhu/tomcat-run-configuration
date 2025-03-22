@@ -30,8 +30,6 @@ shift
 goto setArgs
 :doneSetArgs
 
-if exist "%cd%\setenv.bat" call "%cd%\setenv.bat"
-
-call "%EXECUTABLE%" start %CMD_LINE_ARGS%
+call "%EXECUTABLE%" stop %CMD_LINE_ARGS%
 
 :end

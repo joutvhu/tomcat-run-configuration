@@ -21,9 +21,4 @@ if [ ! -f "$EXECUTABLE" ]; then
     exit 1
 fi
 
-# Call setenv.sh if it exists
-if [ -f "$(pwd)/setenv.sh" ]; then
-    . "$(pwd)/setenv.sh"
-fi
-
-exec "$EXECUTABLE" start "$@"
+exec "$EXECUTABLE" stop "$@"
