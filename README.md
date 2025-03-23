@@ -1,6 +1,6 @@
 # Tomcat Run Configuration
 
-Configuration to application (WAR file) in Apache Tomcat
+Configuration to run application (WAR file) in Apache Tomcat
 
 ## Setup environment
 
