@@ -1,6 +1,5 @@
 @echo off
 setlocal
-
 :: Prompt the user for the tomcat path
 set /p tomcatPath="Enter the tomcat path: "
 
@@ -21,7 +20,7 @@ if not exist "%tomcatPath%\bin\catalina.bat" (
     exit /b 1
 )
 
-set startupFile=%cd%\startup.bat
+set startupFile=%cd%\config.bat
 set "startCatalinaHome=set ""CATALINA_HOME="
 set "replaceCatalinaHome=set """"CATALINA_HOME=%tomcatPath%"""""
 :: Use PowerShell to replace the tomcat path in the startup file
@@ -39,6 +38,6 @@ mkdir "%confFolder%"
 xcopy "%tomcatPath%\conf\*" "%confFolder%" /E /I /H /Y
 
 echo All conf files have been copied.
+endlocal
 
 pause
-endlocal
